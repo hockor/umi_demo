@@ -3,6 +3,7 @@
  */
 import * as THREE from 'three'
 
+var OrbitControls = require('three-orbit-controls')(THREE)
 window.scene = null
 
 class InitThreeJS {
@@ -19,7 +20,7 @@ class InitThreeJS {
 
   initRender () {
     this.render = new THREE.WebGLRenderer()
-    this.render.setClearColor(0xfffe3a)
+    this.render.setClearColor(0x3fd4d2)
     this.render.setSize(window.innerWidth - 280, window.innerHeight)
 
     // this.render.shadowMapEnabled = true
@@ -30,6 +31,10 @@ class InitThreeJS {
     this.render.shadowMap.type = THREE.PCFSoftShadowMap
     document.getElementById('gl').appendChild(this.render.domElement)
     this.render.render(this.scene, this.camera)
+
+    this.clock = new THREE.Clock();
+    this.controls = new OrbitControls(this.camera)
+
   }
 
   initLight () {
@@ -62,23 +67,14 @@ class InitThreeJS {
     this.scene.add(plane)
   }
 
-  initCube () {
-    let cubeGeometry = new THREE.BoxGeometry(4, 8, 4)
-    let cubeMaterial = new THREE.MeshLambertMaterial({
-      color: 0xff0000,
-    })
-    this.cube = new THREE.Mesh(cubeGeometry, cubeMaterial)
-    this.cube.position.x = 0
-    this.cube.position.y = 5
-    this.cube.position.z = 0
-    this.cube.castShadow = true
-    this.scene.add(this.cube)
-  }
 
   animate () {
-    this.cube.rotation.y += 0.01
+    // this.cube.rotation.y += 0.01
     this.render.render(this.scene, this.camera)
+
+    const delta = this.clock.getDelta();
     requestAnimationFrame(this.animate.bind(this))
+
   }
 
   resize () {
@@ -89,8 +85,7 @@ class InitThreeJS {
   init () {
     this.initScene()
     this.initCamera()
-    this.initPlane()
-    this.initCube()
+   // this.initPlane()
     this.initRender()
 
     this.animate()

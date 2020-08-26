@@ -1,9 +1,10 @@
 import React from 'react';
 import * as THREE from 'three';
 
+// @ts-ignore
 import InitThreeJS from '../../service/init.js';
 class Welcome extends React.Component {
-  constructor(props) {
+  constructor(props:any) {
     super(props);
   }
 
