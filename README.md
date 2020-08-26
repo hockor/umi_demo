@@ -1,2 +1,6 @@
-# umi_demo
-Created with CodeSandbox
+# useAPI Example
+
+```
+npm install
+npm start
+```
