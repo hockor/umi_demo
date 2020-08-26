@@ -11,8 +11,10 @@
   "dependencies": {
     "@umijs/use-api": "0.2.0",
     "antd": "^3.19.5",
+    "jquery": "^3.5.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "three": "^0.119.1",
     "umi-request": "^1.2.15"
   },
   "devDependencies": {
