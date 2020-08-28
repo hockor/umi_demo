@@ -22,12 +22,21 @@ const BasicLayout: React.FC = props => {
   return (
     <div className={styles.layout}>
       <div className={styles.left}>
+        路由：
         <ul>
-          {routes.map(i => (
-            <li key={i.path}>
-              <Link to={i.path}>{i.name}</Link>
+          { props.route && (props.route.routes as Array<any>).length  &&
+          (props.route.routes as Array<any>).map(item=>(
+
+            item.path &&
+            <li key={item.path}>
+            <Link to={item.path}>
+              {item.path}
+            </Link>
             </li>
-          ))}
+
+          ))
+          }
+
         </ul>
       </div>
       <div className={styles.right}>{props.children}</div>

@@ -6,7 +6,8 @@
     "test": "umi test",
     "lint:es": "eslint --ext .js src mock tests",
     "lint:ts": "tslint \"src/**/*.ts\" \"src/**/*.tsx\"",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+	  "upload": "scp -r dist/* hockor@148.70.126.152:/home/hockor/demo"
   },
   "dependencies": {
     "@umijs/use-api": "0.2.0",

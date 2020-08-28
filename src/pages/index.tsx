@@ -1,4 +1,4 @@
 import React from 'react';
 export default () => {
-  return <div>index demo</div>;
+  return <div>各种展示demo</div>;
 };

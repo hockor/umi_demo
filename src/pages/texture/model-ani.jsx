@@ -103,14 +103,14 @@ class ModelAni extends React.Component {
     }
 
     var texture = new THREE.TextureLoader().load(
-      require('../../assets/fish/少年鸣人FbxTemp_0005.jpg')
+      publicPath+'/少年鸣人FbxTemp_0005.jpg'
     )
 
     texture.wrapS = THREE.RepeatWrapping
     texture.wrapT = THREE.RepeatWrapping
 
     var texture1 = new THREE.TextureLoader().load(
-      require('../../assets/fish/light.jpg')
+      publicPath+'/light.jpg'
     )
 
     texture1.wrapS = THREE.RepeatWrapping
@@ -136,10 +136,6 @@ class ModelAni extends React.Component {
       needsUpdate:true
     })
 
-
-
-    console.log("********shaderMaterial**********");
-    console.log(shaderMaterial);
     var material = new THREE.MeshBasicMaterial({color: 0xffffff, map:texture});
 
     function initModel () {
@@ -165,7 +161,7 @@ class ModelAni extends React.Component {
 
       //加载模型
       var loader = new THREE.FBXLoader()
-      loader.load(require('../../assets/fish/box.fbx'), function (mesh) {
+      loader.load(publicPath+"/box.fbx", function (mesh) {
 
         //添加骨骼辅助
         meshHelper = new THREE.SkeletonHelper(mesh)
@@ -338,8 +334,6 @@ class ModelAni extends React.Component {
 
             child.material.needsUpdate = true
             child.material.skinning = true
-
-
 
             // console.log("********here********");
             // console.log( child.material.skinning);

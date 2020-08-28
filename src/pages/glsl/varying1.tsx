@@ -1,5 +1,4 @@
 import React from 'react';
-import * as THREE from 'three';
 
 // @ts-ignore
 import InitThreeJS from '../../service/init.js';
