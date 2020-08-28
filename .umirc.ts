@@ -13,8 +13,7 @@ const config: IConfig =  {
   //     ]
   //   }
   // ],
-
-  publicPath:"http://cdn.demo.hockor.com/",
+  hash:true,
   plugins: [
     // ref: https://umijs.org/plugin/umi-plugin-react.html
     ['umi-plugin-react', {

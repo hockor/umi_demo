@@ -18,10 +18,10 @@ class ModelAni extends React.Component {
 
         void main() {
 
-        vNormal = normal;
-        vUv = uv;
-
-        gl_Position = projectionMatrix * viewMatrix * modelMatrix * vec4(position, 1.0);
+          vNormal = normal;
+          vUv = uv;
+  
+          gl_Position = projectionMatrix * viewMatrix * modelMatrix * vec4(position, 1.0);
         }
 `
 
@@ -103,14 +103,14 @@ class ModelAni extends React.Component {
     }
 
     var texture = new THREE.TextureLoader().load(
-      publicPath+'/少年鸣人FbxTemp_0005.jpg'
+      publicPath+'/fish/少年鸣人FbxTemp_0005.jpg'
     )
 
     texture.wrapS = THREE.RepeatWrapping
     texture.wrapT = THREE.RepeatWrapping
 
     var texture1 = new THREE.TextureLoader().load(
-      publicPath+'/light.jpg'
+      publicPath+'/fish/light.jpg'
     )
 
     texture1.wrapS = THREE.RepeatWrapping
@@ -323,10 +323,6 @@ class ModelAni extends React.Component {
       renderer.render(scene, camera)
 
       if ( _test ) {
-
-
-
-
         _test.traverse(function (child) {
 
           if ( child.isMesh ) {
@@ -369,6 +365,12 @@ class ModelAni extends React.Component {
 
 
   }
+  componentWillUnmount () {
+
+    $(".dg").remove()
+
+  }
+
   render() {
 
 

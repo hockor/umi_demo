@@ -42,6 +42,8 @@ class ImgBlend extends React.Component {
 
 
     var video = document.getElementById("bgm");
+    // 需要加这个！
+    video.crossOrigin = 'anonymous'
     var videoTexture = new THREE.VideoTexture(video);
     videoTexture.wrapS = videoTexture.wrapT = THREE.ClampToEdgeWrapping
       videoTexture.minFilter = THREE.LinearFilter;
@@ -94,10 +96,9 @@ class ImgBlend extends React.Component {
 
 
 
-
     return <div id="gl" >
       <h1>视频纹理镂空</h1>
-      <video id="bgm" style={{'display':"none"}} src={require("../../assets/tx.mp4")} autoPlay controls loop />
+      <video id="bgm" style={{'display':"none"}} src={"https://n.v.netease.com/2020/0609/f451001f9ba6277b812f4458cba7c706.mp4"} autoPlay controls loop />
     </div>;
   }
 }

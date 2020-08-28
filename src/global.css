@@ -4,6 +4,7 @@ body,
   height: 100%;
 }
 
+* { touch-action: pan-y; }
 body {
   margin: 0;
 
@@ -14,14 +15,16 @@ h1 {
 	margin: 20px 0;
 }
 #gl {
-  min-width: 800px;
-  min-height: 800px;
+  min-width: 700px;
+  min-height: 700px;
   width: 100%;
   height: 100%;
 	position: relative;
 }
 
-
+p {
+	text-indent: 2em;
+}
 li {
 
 }

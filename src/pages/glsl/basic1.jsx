@@ -1,55 +1,32 @@
 // Created by hztangzhao on 2020/8/28.
 
 import React from 'react';
-import ReactDOM from 'react-dom';
-import InitThreeJS from '../../service/init';
 
-
-export default class Demo1 extends React.Component {
+export default class Basic1 extends React.Component {
   constructor(props) {
     super(props);
   }
 
-
-
-
   componentDidMount() {
 
-
-
     const vert =  `
-    varying vec2 vUv;
 
-      void main()
-      {
-      vUv = uv;
-      gl_Position = projectionMatrix * viewMatrix * modelViewMatrix * vec4(position, 1.0);
+      void main() {
+        gl_Position = vec4(position, 1.0);
       }
     
     `
 
     const frag = `
-     uniform float time;
+      uniform vec3 color;
+      void main() {
+        gl_FragColor = vec4(color, 1.0);
 
-      varying vec2 vUv;
-
-      void main(void) {
-
-      vec2 position = - 1.0 + 2.0 * vUv;
-
-      float red = abs(sin(position.x * position.y + time / 5.0));
-      float green = abs(sin(position.x * position.y + time / 4.0));
-      float blue = abs(sin(position.x * position.y + time / 3.0));
-      gl_FragColor = vec4(red, green, blue, 1.0);
-
-      }
-    
-    
+      } 
     `
 
-
+    let tempColor = null
     var renderer;
-    var stats;
     var clock;
     var uniforms1;
     var camera;
@@ -97,6 +74,7 @@ export default class Demo1 extends React.Component {
 //几何物体
     function initObject() {
       uniforms1 = {
+        color:{value: new THREE.Vector3( 0.1, 0.5, 0.4 )},
         time: { value: 1.0 }
       };
 
@@ -124,16 +102,37 @@ export default class Demo1 extends React.Component {
     function animation() {
       var delta = clock.getDelta();
       uniforms1.time.value += delta * 5;
+
+      if(tempColor) {
+        uniforms1.color.value = tempColor;
+        tempColor = null
+      }
       renderer.render(scene, camera);
       requestAnimationFrame(animation);
     }
 
       threeStart();
+    
+
+    $("#color").change(function(){
+      const color = $(this).val()
+      var rgbaCol = new THREE.Vector3( parseInt(color.slice(-6, -4), 16)/256 , parseInt(color.slice(-4, -2), 16)/256 , parseInt(color.slice(-2), 16)/256 );
+
+      console.log("**********************");
+      console.log(rgbaCol);
+
+      tempColor = rgbaCol
+    })
+    
+    
+
 
   }
   render() {
     return <div id="gl" >
-      <h1>流动的颜色</h1>
+      <h1>基础颜色显示</h1>
+      
+    <p>  &nbsp;选择颜色以后，点击空白区域：<input id="color" type="color"/></p>
       
     </div>;
   }

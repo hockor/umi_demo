@@ -83,25 +83,24 @@ class InitThreeJS {
   init () {
     this.initScene()
     this.initCamera()
-   // this.initPlane()
     this.initRender()
 
     this.animate()
     this.initLight()
 
     const _this = this
-    window.onresize = function () {
-      _this.camera = new THREE.PerspectiveCamera(
-        45,
-        window.innerWidth / window.innerHeight,
-        0.1,
-        1000,
-      )
-      _this.camera.position.set(-30, 30, 30)
-      _this.camera.lookAt(this.scene.position)
-
-      _this.render.setSize(window.innerWidth - 280, window.innerHeight)
-    }
+    // window.onresize = function () {
+    //   _this.camera = new THREE.PerspectiveCamera(
+    //     45,
+    //     window.innerWidth / window.innerHeight,
+    //     0.1,
+    //     1000,
+    //   )
+    //   _this.camera.position.set(-30, 30, 30)
+    //   _this.camera.lookAt(this.scene.position)
+    //
+    //   _this.render.setSize(window.innerWidth - 280, window.innerHeight)
+    // }
   }
 }
 

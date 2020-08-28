@@ -3,6 +3,3 @@
  fileName: test
  */
 
-
-console.log("**********************");
-console.log('good');
