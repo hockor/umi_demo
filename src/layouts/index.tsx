@@ -1,6 +1,11 @@
 import React from 'react';
+// @ts-ignore
 import styles from './index.css';
 import Link from 'umi/link';
+
+
+
+require('../assets/test')
 
 const BasicLayout: React.FC = props => {
   const routes = [

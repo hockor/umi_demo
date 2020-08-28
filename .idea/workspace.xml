@@ -2,17 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5600cdf2-faf2-4636-9d44-345e20865014" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/texture/img-blend.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/texture/img-blend2.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fish/Naruto.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fish/box.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fish/file.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fish/light.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fish/redear_sunfish.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fish/redear_sunfish_col3.tif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fish/redear_sunfish_nrml1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fish/tiandeng.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fish/少年鸣人FbxTemp_0001.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fish/少年鸣人FbxTemp_0005.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/lib/Detector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/lib/FBXLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/lib/OrbitControls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/lib/dat.gui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/lib/inflate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/lib/stats.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/texture/model-ani.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.umirc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.umirc.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/document.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/document.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/glsl/varying1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/glsl/varying1.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/texture/img-blend.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/texture/img-blend.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/texture/img-blend2.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/texture/img-blend2.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/init.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,21 +57,26 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/texture" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="$USER_HOME$/.nvm/versions/node/v10.14.2/lib/node_modules/standard" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="$USER_HOME$/.nvm/versions/node/v4.5.0/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="options.lastSelected" value="reference.settings.deploy.options" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
@@ -57,11 +92,28 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598418274344</updated>
-      <workItem from="1598418275422" duration="9427000" />
+      <workItem from="1598418275422" duration="24630000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="3293" y="501" key="#ESLint" timestamp="1598516002707">
+      <screen x="1536" y="-66" width="2560" height="1377" />
+    </state>
+    <state x="3293" y="501" key="#ESLint/1536.-66.2560.1377/0.23.1536.937@1536.-66.2560.1377" timestamp="1598516002707" />
+    <state x="2902" y="173" key="SettingsEditor" timestamp="1598516113358">
+      <screen x="1536" y="-66" width="2560" height="1377" />
+    </state>
+    <state x="2902" y="173" key="SettingsEditor/1536.-66.2560.1377/0.23.1536.937@1536.-66.2560.1377" timestamp="1598516113358" />
+    <state x="3070" y="314" width="771" height="616" key="find.popup" timestamp="1598434211215">
+      <screen x="1536" y="-66" width="2560" height="1377" />
+    </state>
+    <state x="3070" y="314" width="771" height="616" key="find.popup/1536.-66.2560.1377/0.23.1536.937@1536.-66.2560.1377" timestamp="1598434211215" />
   </component>
 </project>

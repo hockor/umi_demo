@@ -1,9 +1,7 @@
 /**
  * Created by hztangzhao on 2019-04-19.
  */
-import * as THREE from 'three'
 
-var OrbitControls = require('three-orbit-controls')(THREE)
 window.scene = null
 
 class InitThreeJS {
@@ -33,7 +31,7 @@ class InitThreeJS {
     this.render.render(this.scene, this.camera)
 
     this.clock = new THREE.Clock();
-    this.controls = new OrbitControls(this.camera)
+    this.controls = new THREE.OrbitControls(this.camera)
 
   }
 

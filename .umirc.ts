@@ -3,6 +3,7 @@ import { IConfig } from 'umi-types';
 // ref: https://umijs.org/config/
 const config: IConfig =  {
   treeShaking: true,
+
   // routes: [
   //   {
   //     path: '/',
@@ -12,6 +13,8 @@ const config: IConfig =  {
   //     ]
   //   }
   // ],
+
+
   plugins: [
     // ref: https://umijs.org/plugin/umi-plugin-react.html
     ['umi-plugin-react', {
